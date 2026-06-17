@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
+  "engines": {
+  "node": "18.x"
+}
+
   "scripts": {
     "start": "node server.js"
   },
@@ -13,4 +17,6 @@
     "resend": "^3.0.0",
     "stripe": "^22.2.1"
   }
+}
+
 }
