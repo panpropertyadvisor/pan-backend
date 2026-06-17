@@ -1,10 +1,13 @@
 import express from "express";
 import cors from "cors";
 import { Resend } from "resend";
-import dotenv from "dotenv";
 import Stripe from "stripe";
 
-dotenv.config();
+import dotenv from "dotenv";
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
+
 
 const app = express();
 app.use(cors());
