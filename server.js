@@ -18,7 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 
--------------------------
+//-------------------------
 // RESEND + STRIPE
 // -----------------------------
 const resend = new Resend(process.env.RESEND_API_KEY);
